@@ -8,6 +8,13 @@
     <title>Apredniedo HTML</title>
     <!-- descripcion no mas de 165 caracteres -->
     <meta name="descripcion" content="en esta pagina estamos aprendiendo los fundamentos HTML">
+    <link rel="canonical" href="http://tudominio.com/la-url-canonica">
+    <link rel="icon" href="files/cabeza.jpg">
+    <link rel="apple touch-icon" href="files/cabeza.jpg">
+    <meta name="theme-color" content="#FF6600">
+    <meta property="og:title" content="Aprendiendo HTL" > 
+    <meta property="og:descripcion" content="en esta pagina estamos aprendiendo los fundamentos HTML " > 
+    <meta property="og:image" content="https://tudominio.com/img/" > 
 </head>
 <body>
     <ul id="inicio">
@@ -328,6 +335,21 @@
         <input type="submit">
         <input type="reset">
     </form>
+    <h2>Data Atribute</h2>
+    <ol>
+        <li data-invent="spring">primavera</li>
+        <li data-invent="verano">varano</li>
+        <li></li>
+    </ol>
+    <h2 id="Accesibilidad">Accesibilidad Web</h2>
+    <h3 role="title">Las estaciones del año</h3>
+    <ul role="list">
+        <li tabindex="2" role="listitem">primavera</li>
+        <li tabindex="1" role="listitem">verano</li>
+        <li tabindex="4" role="listitem">otoño</li>
+        <li tabindex="3" role="listitem">invierno</li>
+    </ul>
+    <a role="link" aria-label="en este enlace encontraras informacion sobre el estaciones" href="#" target="_blank">mas informacion</a>
     <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
     <script src="JAVASCRIPT/javascript.js"></script>
 </body>
