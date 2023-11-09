@@ -212,12 +212,6 @@
     <br>
     <input type="color">
     <br>
-    <input type="button" value="Boton">
-    <br>
-    <input type="submit">
-    <br>
-    <input type="reset">
-    <br>
     <input type="file" multiple>
     <br>
     <input type="hidden" name="idioma" id="es">
@@ -229,6 +223,8 @@
     <input type="tel">
     <br>
     <input type="password">
+    <br>
+    <input type="button" value="Boton">
     <br>
     <input type="search">
     <br>
@@ -244,7 +240,57 @@
         <option value="">CSS</option>
         <option value="">Javascript</option>
     </select>
-
+    <br>
+    <input type="text" readonly disabled value="jonmircha">
+    <br>
+    <input type="text" placeholder="escribe tu nombre">
+    <hr>
+    <form action="http://jonmircha.com/" method="post" autocomplete="on" target="_blank">
+        <label for="usuario">Usuario:</label>
+        <input type="text" name="usuario" id="usuario" placeholder="escribe usuario" required pattern="^[A-Za-z]+$" title="El campo solo acepta letas">
+        <br>
+        <input type="text" name="email" autocomplete="on">
+        <br>
+        <label for="password">Contraseña:</label>
+        <input type="password" name="password" id="password" placeholder="escribe password" required>
+        <br>
+        <input type="submit">
+        <br>
+        <input type="reset">
+        <br>
+    </form>
+    <h4>select,radios y checkbox</h4>
+    <form action="index.html">
+        <p>elige tu idioma</p>
+        <select name="idioma" required>
+            <option value="">Elige una opcion</option>
+            <option value="es">español</option>
+            <option value="en" selected>ingles</option>
+            <option value="fr">frances</option>
+        </select>
+        <p>Elige un lenguaje de programacion favorito</p>
+        <input type="radio" name="lenguaje" id="radio-js" value="js" required>
+        <label for="radio-js">Javascript</label>
+        <input type="radio" name="lenguaje" id="radio-py" value="py" required>
+        <label for="radio-py">Python</label>
+        <input type="radio" name="lenguaje" id="radio-php" value="php" required>
+        <label for="radio-php">PHP</label>
+        <p>Elige tus interes:</p>
+        <label>
+            <input type="checkbox" name="interes" value="deportes" checked>
+            deportes
+        </label>
+        <label>
+            <input type="checkbox" name="interes" value="finanzas">
+            finanzas
+        </label>
+        <label>
+            <input type="checkbox" name="interes" value="salud" checked>
+            salud
+        </label>
+        <input type="submit">
+        <input type="reset">
+    </form>
     <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
     <script src="JAVASCRIPT/javascript.js"></script>
 </body>
